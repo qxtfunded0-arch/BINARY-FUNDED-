@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-primary: #06b6d4; /* Cyan 500 */
+  --color-brand-accent: #22d3ee;  /* Cyan 400 */
+  --color-brand-dark: #050505;
+  --color-brand-card: rgba(24, 24, 27, 0.4); /* zinc-900/40 */
+  --color-border-subtle: rgba(39, 39, 42, 0.5); /* zinc-800/50 */
+}
+
+body {
+  background-color: var(--color-brand-dark);
+  color: #f4f4f5; /* zinc-100 */
+  font-family: var(--font-sans);
+}
+
+.glass-morphism {
+  background: var(--color-brand-card);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--color-border-subtle);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+  @apply px-6 py-2 rounded-lg bg-cyan-500 text-black font-bold hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-500/20 active:scale-95;
+}
+
+.btn-secondary {
+  @apply px-6 py-2 rounded-lg bg-zinc-800 text-zinc-100 font-semibold hover:bg-zinc-700 transition-all border border-zinc-700;
+}
