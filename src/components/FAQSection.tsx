@@ -56,6 +56,7 @@ export const FAQSection = () => {
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: 'auto', opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.15 }}
                   className="overflow-hidden"
                 >
                   <div className="p-6 pt-0 text-zinc-400 leading-relaxed font-medium">

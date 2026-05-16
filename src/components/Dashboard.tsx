@@ -69,7 +69,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ orders, onBack }) => {
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: idx * 0.1 }}
+                  transition={{ duration: 0.15, delay: idx * 0.05 }}
                   key={order.id}
                   className="bg-zinc-900/40 border border-zinc-800 p-5 md:p-6 rounded-[24px] md:rounded-3xl flex flex-col md:flex-row justify-between items-center gap-5 hover:border-zinc-700 transition-all group"
                 >

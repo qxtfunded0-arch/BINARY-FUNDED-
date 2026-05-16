@@ -46,7 +46,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ delay: idx * 0.1 }}
+              transition={{ duration: 0.15, delay: idx * 0.05 }}
               className={`glass-morphism rounded-3xl p-8 flex flex-col transition-all hover:shadow-2xl relative ${account.id === 'in-2000' ? 'border-2 border-cyan-500/30' : 'border border-zinc-800'}`}
             >
               {account.id === 'in-2000' && (

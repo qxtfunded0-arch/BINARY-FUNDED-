@@ -379,6 +379,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({ plan, onClose, onS
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
+        transition={{ duration: 0.15 }}
         onClick={onClose}
         className="absolute inset-0 bg-slate-950/80 backdrop-blur-sm"
       />
@@ -386,6 +387,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({ plan, onClose, onS
         initial={{ scale: 0.95, opacity: 0, y: 20 }}
         animate={{ scale: 1, opacity: 1, y: 0 }}
         exit={{ scale: 0.95, opacity: 0, y: 20 }}
+        transition={{ duration: 0.15 }}
         className="relative w-full max-w-2xl bg-slate-900 rounded-3xl overflow-hidden shadow-2xl border border-white/10"
       >
         {/* Header */}

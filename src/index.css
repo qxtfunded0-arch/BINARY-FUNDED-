@@ -12,6 +12,10 @@
   --color-border-subtle: rgba(39, 39, 42, 0.5); /* zinc-800/50 */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-brand-dark);
   color: #f4f4f5; /* zinc-100 */
